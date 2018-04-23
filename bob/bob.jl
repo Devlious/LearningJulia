@@ -6,7 +6,7 @@ function bob(stimulus::AbstractString)
     # Remove the special characters and check if is empty
     isempty(strip(stimulus)) && return "Fine. Be that way!"
 
-    # Remove the special characters and check if the last is '?'
+    # Remove the special characters and check if the last character is '?'
     endswith(strip(stimulus), '?') && return "Sure."
 
     return "Whatever."
